@@ -13,14 +13,25 @@
       <p>Log into an exsisting account.</p>
       <section>
         <form>
-          <label>Username</label>
+          <label>Username:</label>
           <!--"Label" element provides caption-->
+          
+          <div>
           <input type="textbox" name = usernameLogin required>
-        </input>
+          </input>
             <!--type | Makes the label a text box type  -->
             <!--name | Gives input a name for backend use-->
             <!-- required | Requires feild to be filled before submission-->
-          </label>
+          </div>
+          
+          <div>
+          <label>Password:</label>
+            <input type= "textbox" name="passwordLogin" required>
+          </input>
+          </div>
+
+          <button type="submit" name="submitLogin">Log In</button>
+   
         </form>
       </section>
     </main>
