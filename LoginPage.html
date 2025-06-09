@@ -13,11 +13,12 @@
       <p>Log into an exsisting account.</p>
       <section>
         <form>
-          <label>Username:</label>
-          <!--"Label" element provides caption-->
           
           <div>
-          <input type="textbox" name = usernameLogin required>
+          <label for="usernameLogin">Username:</label>
+          <!--"Label" element provides caption-->
+
+          <input type="textbox" name = usernameLogin id = usernameLogin required>
           </input>
             <!--type | Makes the label a text box type  -->
             <!--name | Gives input a name for backend use-->
@@ -25,13 +26,19 @@
           </div>
           
           <div>
-          <label>Password:</label>
-            <input type= "textbox" name="passwordLogin" required>
+          <label for="passwordLogin">Password:</label>
+            <!--for (attribute) links a label to another element. 
+            When the label is clicked it is also clicked the element whose 
+            id is referenced in the attribute-->
+            <input type= "password" name="passwordLogin" id="passwordLogin" required>
+            <!--type = "password | hides/censors the characters in the textbox"-->
+            <!--id attribute provides a unique id for the element-->
           </input>
           </div>
 
-          <button type="submit" name="submitLogin">Log In</button>
-   
+          <button type="submit" name="submitLogin" id="submitLogin">Log In</button>
+          <!--button type="submit" | sends form data to the server-->
+        
         </form>
       </section>
     </main>
