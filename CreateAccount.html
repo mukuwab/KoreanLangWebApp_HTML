@@ -1,27 +1,33 @@
 <!DOCTYPE html> <!-- tells web browsers about the HTML version used in a document  -->
 <html>
   <head>
-   
-    <link rel="stylesheet" href="CreateAccount.css"></link>
-    <!--The "link" element allows you to connect html to a style sheet-->
+    <meta charset ="utf-8">
+      <!--meta is a void element, doesnt need closing tags -->
+      <!--  meta charset = "utf-8" tells the webpage how to encode characters for the page -->
+      <!--(UTF-8 = universal standard)-->
+      <!--The <meta charset="utf-8"> should be the first element inside <head> for compatibility and performance.-->
+
+    <link rel="stylesheet" href="CreateAccount.css"/>
+    <!--The "link" element is a VOID element, allows you to connect html to a style sheet-->
     <!--The "rel" attribute defines the relationship of what you wish to link it to-->
     <!--The "href" attribute defines the name of the style sheet-->
 
     <title>Login Page</title> 
       <!-- title element not visable on web page, useful for search engines -->
-      <meta charset = "utf-8">
-      <!--meta is a void element, doesnt need closing tags -->
-      <!--  meta charset = "utf-8" tells the webpage how to encode characters for the page -->
-      <!--(UTF-8 = universal standard)-->
+      
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!--special meta element makes styling on PC look similair on mobile-->
   </head>
   <body>
     <main>
-      <h1 class="CreatAccountHeader">Create Account</h1>
+      <h1 id="CreateAccountHeader">Create Account</h1>
       <p>Create a new account</p>
       <section>
         <form>
           
           <div>
+            <!--"div" element used for design layout purposes-->
             <label for="usernameCreateAccount">Username:</label>
             <!--"Label" element provides caption-->
 
