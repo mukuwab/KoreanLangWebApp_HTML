@@ -1,0 +1,57 @@
+<!DOCTYPE html> <!-- tells web browsers about the HTML version used in a document  -->
+<html>
+  <head>
+   <title>Login Page</title> 
+      <!-- title element not visable on web page, useful for search engines -->
+    <meta charset = "utf-8">
+      <!--meta is a void element, doesnt need closing tags -->
+      <!--  meta charset = "utf-8" tells the webpage how to encode characters for the page -->
+      <!--(UTF-8 = universal standard)-->
+  </head>
+  <body>
+    <main>
+      <h1>Create Account</h1>
+      <p>Create a new account</p>
+      <section>
+        <form>
+          
+          <div>
+            <label for="usernameCreateAccount">Username:</label>
+            <!--"Label" element provides caption-->
+
+            <input type="text" name = "usernameCreateAccount" id = "usernameCreateAccount" required>
+              <!--Best practice to use quotes for ALL attribute values-->
+              <!--the input element is void, doesnt need closing tags-->
+              <!--type = "text"| Makes the label a text box type, for normal text input  -->
+              <!--name | Gives input a name for backend use-->
+              <!-- required | Requires feild to be filled before submission-->
+          </div>
+          
+          <div>
+            <label for="passwordCreateAccount" >Password:</label>
+              <!--for (attribute) links a label to another element. 
+              When the label is clicked it is also clicked the element whose 
+              id is referenced in the attribute-->
+              <input type= "password" name="passwordCreateAccount" id="passwordCreateAccount" required>
+              <!--type = "password | hides/censors the characters in the textbox"-->
+              <!--id attribute provides a unique id for the element-->
+            
+          </div>
+          <div>
+            <label for="passwordCreateAccountReEnt" >Re-Enter Password:</label>
+              <!--for (attribute) links a label to another element. 
+              When the label is clicked it is also clicked the element whose 
+              id is referenced in the attribute-->
+              <input type= "password" name="passwordCreateAccountReEnt" id="passwordCreateAccountReEnt" required>
+              <!--type = "password | hides/censors the characters in the textbox"-->
+              <!--id attribute provides a unique id for the element-->
+            
+          </div>
+          <button type="submit" name="submitLogin" id="submitLogin">Create Account</button>
+          <!--button type="submit" | sends form data to the server-->
+        
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
